@@ -1,9 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap');
+
 :root {
-  --font-display:
-    Spline Sans, Inter, ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji,
-    Segoe UI Symbol, Noto Color Emoji;
-  --font-mono:
-    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+  /* Fonts */
+  --font-display: 'Zen Maru Gothic', ui-sans-serif, system-ui, sans-serif;
+  --font-display-bold: 'RocknRoll One', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
   --font-rounded: 'SF Pro Rounded', 'Hiragino Maru Gothic ProN', Meiryo, 'MS PGothic', sans-serif;
   --font-serif: Georgia, 'Times New Roman', serif;
+
+  /* Colors */
+  --color-text: #3F3F3F;
+  --color-main: #5DCAA5;
+  --color-sub: #FCF9EE;
+  --color-accent-orange: #FFCC8D;
+  --color-accent-green-light: #DFF4ED;
+  --color-accent-yellow: #F5F1DA;
+  --color-accent-red: #DA5B5B;
+  --color-accent-green-soft: #DFF4CF;
+  --color-accent-cream: #F5F4ED;
 }

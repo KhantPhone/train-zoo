@@ -8,7 +8,11 @@
     "scheme": "trainzoo",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "icon": "./assets/expo.icon",
+      "bundleIdentifier": "com.anonymous.train-zoo"
+    },
+    "web": {
+      "favicon": "./assets/images/icons/logo.svg"
     },
     "android": {
       "adaptiveIcon": {
@@ -18,10 +22,6 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "predictiveBackGestureEnabled": false
-    },
-    "web": {
-      "output": "static",
-      "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
       "expo-router",
