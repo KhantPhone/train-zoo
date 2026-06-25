@@ -9,20 +9,15 @@
     "userInterfaceStyle": "automatic",
     "ios": {
       "icon": "./assets/expo.icon",
-      "bundleIdentifier": "com.anonymous.train-zoo"
+      "bundleIdentifier": "com.anonymous.train-zoo",
+      "infoPlist": {
+        "LSApplicationQueriesSchemes": ["line", "instagram", "instagram-stories", "twitter", "fb"]
+      }
     },
     "web": {
       "favicon": "./assets/images/icons/logo.svg"
     },
-    "android": {
-      "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/images/android-icon-foreground.png",
-        "backgroundImage": "./assets/images/android-icon-background.png",
-        "monochromeImage": "./assets/images/android-icon-monochrome.png"
-      },
-      "predictiveBackGestureEnabled": false
-    },
+    
     "plugins": [
       "expo-router",
       [

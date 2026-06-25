@@ -1,4 +1,3 @@
-import { Stack } from 'expo-router';
 import { RocknRollOne_400Regular } from '@expo-google-fonts/rocknroll-one';
 import {
   ZenMaruGothic_300Light,
@@ -8,6 +7,8 @@ import {
   ZenMaruGothic_900Black,
 } from '@expo-google-fonts/zen-maru-gothic';
 import { useFonts } from 'expo-font';
+import { Stack } from 'expo-router';
+import { PetProvider } from '../context/PetContext';
 import '../global.css';
 
 export default function RootLayout() {
@@ -23,5 +24,9 @@ export default function RootLayout() {
 
   if (!loaded) return null;
 
-  return <Stack screenOptions={{ headerShown: false }} />;
+  return (
+    <PetProvider>
+      <Stack screenOptions={{ headerShown: false, animation: 'none' }} />
+    </PetProvider>
+  );
 }

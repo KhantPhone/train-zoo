@@ -1,19 +1,18 @@
-import { useEffect } from 'react';
-import { View, StyleSheet } from 'react-native';
 import { router } from 'expo-router';
-import Logo from '../../assets/images/icons/logo.svg';
+import { useEffect } from 'react';
+import { Image, StyleSheet, View } from 'react-native';
 
 export default function LoadingScreen() {
   useEffect(() => {
     const timer = setTimeout(() => {
-      router.replace('/home');
+      router.replace('/(tabs)/home');
     }, 3000);
     return () => clearTimeout(timer);
   }, []);
-  
+
   return (
     <View style={styles.container}>
-      <Logo style={styles.logo} width="80%" height="60%" />
+      <Image source={require('../../assets/images/icons/logo.png')} style={styles.logo} resizeMode="contain" />
     </View>
   );
 }
